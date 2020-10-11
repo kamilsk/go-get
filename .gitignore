@@ -1,2 +1,4 @@
 # code coverage and quality reports
 *.out
+
+.idea

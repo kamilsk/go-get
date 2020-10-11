@@ -22,14 +22,14 @@ func (err Message) Error() string {
 	return string(err)
 }
 
-// Recovered represents a recovered error.
+// Recovered represents a recovered after panic error.
 type Recovered interface {
 	error
 	// Cause returns the original cause of panic.
 	Cause() interface{}
 }
 
-// Retriable represents a retriable error.
+// Retriable represents a retriable action error.
 //
 // It is compatible with github.com/kamilsk/retry (v4 and later).
 type Retriable interface {
